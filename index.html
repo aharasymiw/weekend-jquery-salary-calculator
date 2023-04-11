@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Salary Calculator</title>
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+</head>
+
+</style>
+
+<body>
+    <header>
+        <h1>Salary Calculator</h1>
+    </header>
+
+    <section id="add_employee">
+        <h2>Add Employee</h2>
+        <form id="inputForm">
+            <input type="text" name="first_name" placeholder="First Name" />
+            <input type="text" name="last_name" placeholder="Last Name" />
+            <input type="text" name="employee_id" placeholder="Employee Id" />
+            <input type="text" name="title" placeholder="Title" />
+            <input type="number" name="annual_salary" placeholder="Annual Salary" />
+
+            <button id="submit_button">Submit</button>
+        </form>
+    </section>
+
+    <section id="employees">
+        <h2>Employees</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Annual Salary</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="employeeData">
+                <tr class=".employee">
+                    <td>Jen</td>
+                    <td>Barber</td>
+                    <td>4521</td>
+                    <td>Team Lead</td>
+                    <td class="annual_salary">$80,000</td>
+                    <td>
+                        <button class="delete">Delete</button>
+                    </td>
+                </tr>
+                <tr class=".employee">
+                    <td>Maurice</td>
+                    <td>Moss</td>
+                    <td>8724</td>
+                    <td>Support Team</td>
+                    <td class="annual_salary">$58,000</td>
+                    <td>
+                        <button class="delete">Delete</button>
+                    </td>
+                </tr>
+                <tr class=".employee">
+                    <td>Roy</td>
+                    <td>Smith</td>
+                    <td>9623</td>
+                    <td>Quality Assurance</td>
+                    <td class="annual_salary">$48,000</td>
+                    <td>
+                        <button class="delete">Delete</button>
+                    </td>
+                </tr>
+                <tr id="blank_row">
+                    <td colspan="6"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="total">
+        <h2 id="totalMonthlyAmount">Total Monthly: $0.00</h2>
+    </section>
+
+    </div>
+</body>
+
+</html>
